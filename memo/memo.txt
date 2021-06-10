@@ -72,3 +72,253 @@ Erroneous value is -147.25 but minimum permitted is -144.958 and maximum permitt
 Additional message is : Invalid Position - Position of actuator(4) in Trajectory Point (0) exceeds limits
 -----------------------------
 ```
+
+tsukamoto@P15s:~/ros/kinova_ws/src/jsk_robot/jsk_kinova_robot$ rostopic echo /arm_gen3/gen3_lite_joint_trajectory_controller/follow_joint_trajectory/result
+header: 
+  seq: 1
+  stamp: 
+    secs: 1623290606
+    nsecs: 428222351
+  frame_id: ''
+status: 
+  goal_id: 
+    stamp: 
+      secs: 1623290604
+      nsecs: 955181542
+    id: "1623290604413140434_/kinova_eus_interface_1623289867705171285_1192_arm_gen3/gen3_lite_joint_trajectory_controller/follow_joint_trajectory_1"
+  status: 4
+  text: ''
+result: 
+  error_code: -1
+  error_string: "Error report has been fetched and error elements are listed below : \n-----------------------------\n\
+  Error #1\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (0) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #2\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (0) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #3\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (1) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #4\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (1) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #5\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (2) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #6\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (2) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #7\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (3) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #8\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (3) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #9\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (4) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #10\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (4) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #11\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (5) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #12\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (5) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #13\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (6) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #14\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (6) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #15\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (7) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #16\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (7) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #17\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (8) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #18\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (8) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #19\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (9) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #20\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (9) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #21\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (10) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #22\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (10) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #23\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (11) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #24\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (11) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #25\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (12) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #26\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (12) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #27\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (13) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #28\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (13) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #29\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (14) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #30\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (14) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #31\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (15) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #32\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (15) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #33\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (16) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #34\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (16) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #35\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (17) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #36\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (17) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #37\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (18) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #38\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (18) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #39\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.126 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (19) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #40\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (19) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #41\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.125 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (20) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #42\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (20) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #43\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.125 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (21) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #44\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (21) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #45\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.125 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (22) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #46\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (22) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #47\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.125 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (23) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #48\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (23) exceeds limits\n-----------------------------\n-----------------------------\n\
+  Error #49\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\nIdentifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\n\
+  Actuator : 3\nErroneous value is -154.125 but minimum permitted is -150.115 and\
+  \ maximum permitted is 150.115\nAdditional message is : Invalid Position - Position\
+  \ of actuator(2) in Trajectory Point (24) exceeds limits\n-----------------------------\n\
+  -----------------------------\nError #50\nType : TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT\n\
+  Identifier : TRAJECTORY_ERROR_IDENTIFIER_POSITION\nActuator : 5\nErroneous value\
+  \ is -147.25 but minimum permitted is -144.958 and maximum permitted is 144.958\n\
+  Additional message is : Invalid Position - Position of actuator(4) in Trajectory\
+  \ Point (24) exceeds limits\n-----------------------------\n"
+---
+
+適当な角度でエラー
+[ERROR] [1623300893.102460026]: Trajectory has been aborted.
+[ERROR] [1623300893.102550198]: Trajectory execution failed in the arm with sub error code 69
+The starting point for the trajectory did not match the actual commanded joint angles.
