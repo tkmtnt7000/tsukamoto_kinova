@@ -1,0 +1,17 @@
+#!/usr/bin/env roseus
+
+(ros::load-ros-manifest "roseus")
+
+(ros::roseus "hoge")
+
+(defclass error-cb-class
+  :super propertied-object
+  :slots ())
+(defmethod error-cb-class
+  (:init() (ros::subscribe "/arm_gen3/gen3_lite_joint_trajectory_controller/follow_joint_trajectory/result" control_msgs::FollowJointTrajectoryActionResult))
+  (:error-cb (msg) (print 'cb self (send msg :error_string))))
+
+(setq m (instance error-cb-class :init))
+(do-until-key
+ (ros::spin-once)
+ )
