@@ -12,11 +12,12 @@
   (:error-cb (msg)
              (setq result (send msg :result))
              (setq error_msg (send result :error_string))
-             ;;(ros::ros-error "~A" error_msg)
+             (if (send (send msg :result) :error_string)
+                 (ros::ros-error "~A" error_msg))
              (cond
               ((substringp "TRAJECTORY_ERROR_TYPE_JOINT_POSITION_LIMIT" error_msg)
-               (progn (ros::ros-error "~A~%" (send result :error_string))
-                      (ros::ros-error "For detail, see https://github.com/tkmtnt7000/jsk_robot/blob/tsukamoto/kinova-gen3/jsk_kinova_robot/README.md#trouble-shooting")))))
+               (progn (ros::ros-error "~A~%" error_msg)
+                      (ros::ros-error "For detail, see https://github.com/jsk-ros-pkg/jsk_robot/blob/master/jsk_kinova_robot/README.md#trouble-shooting")))))
   )
 
 (setq m (instance error-cb-class :init))
