@@ -329,4 +329,4 @@ The starting point for the trajectory did not match the actual commanded joint a
 eusでinitしたときにirtviewerに出るモデルと実機の角度は違うけどそれは関係ないのか？
 -----------------------------------------------------------------------
 
-31mm
+31mm3Dプリンタをつかうとよい？
